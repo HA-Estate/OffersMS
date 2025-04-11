@@ -4,7 +4,7 @@ import uvicorn
 from fastapi import FastAPI
 from ms_core import setup_app
 
-application = FastAPI()
+application = FastAPI(title="OffersMS")
 
 setup_app(
     application,
