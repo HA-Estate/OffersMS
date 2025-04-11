@@ -1,0 +1,26 @@
+[project]
+name = "offersms"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Kirill Ibragimov",email = "hexchap@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13, <4.0"
+dependencies = [
+    "fastapi (==0.112.2)",
+    "tortoise-orm[asyncpg] (==0.21.6)",
+    "pydantic (==2.10)",
+    "ms-core @ git+https://github.com/HexChap/MSCore.git",
+    "uvicorn (>=0.34.0,<0.35.0)"
+]
+
+[tool.pyright]
+# venvPath = "."
+# venv = ".venv"
+reportIncompatibleVariableOverride = false
+reportInvalidTypeForm = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

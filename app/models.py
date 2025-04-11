@@ -1,6 +1,5 @@
 from tortoise import Model
 from tortoise import fields
-from tortoise.contrib.postgres.indexes import GinIndex
 
 
 class Offer(Model):
@@ -9,4 +8,3 @@ class Offer(Model):
 
     class Meta:
         table = "offers"
-        indexes = [GinIndex(fields={"desc"})]
